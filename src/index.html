@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- In HTML5 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>HTML5 Web Sql Database</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="./js/todo.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="page-header">
+            <h1>Todo manager <small>html5 web sql database.</small></h1>
+            <h3><span class="label label label-danger" id="messageLabel"></span></h3>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label>Todo:</label>
+                <!-- <input type="text" id="todo" class="form-control" /> -->
+                <textarea id="todo" class="form-control" rows="3"></textarea>
+            </div>
+
+            <button class="btn btn-primary" id="btnAdd">Add</button>
+        </div>
+
+        <div class="row">
+            <div class="alert alert-warning hide" role="alert" id="alertMessage">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="page-header">
+                <h3>Todo list <span class="badge" id="badgeTodoCount">0</span></h3>
+            </div>
+            <ul id="todoItems" class="list-group">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
